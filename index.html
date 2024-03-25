@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Store </title>
-    <link rel="stylesheet" href="estilo/estiloprincipal.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Projeto Loguin</title>
 </head>
 <body>
-    <header>
-        <menu>
-            <ul>
-                <li><a href="#">Malha Peruana</a></li>
-                <li><a href="#">Malha de fio Duplo</a></li>
-                <li><a href="#">Acessorios Masculinos</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-        </menu>
-    </header>
-   <div id="container">
 
-        <div id="baner1">
-                
-                <a href="#" class="link_baner1">Vista-se com Elegancia</a>
-        </div>
-
-        <div id="baner2">
-                
-                <a href="#" class="link_baner2">Encontre seu Estilo</a>
-        </div>
-
-   </div>
     <main>
-        
-        <article>
-            
 
-        </article>
+        <section id="loguin">
+
+            <div id="imagem">
+                
+            </div>
+            
+            <div id="formulario">
+                <h1>Loguin</h1>
+                <p>Prepare-se Para a emoção de se transformar!</p>
+
+                <form action="loguin.php" method="post">
+                    <p>
+                        <label for="iloguin-caixa" id="form-usuario">Usuario</label>
+                        <input type="text" id="iloguin-caixa" required >
+                    </p>
+                    <p>
+                        <label for="isenha">Senha   </label>
+                        <input type="password" name="senha" id="isenha" required>
+
+                    </p>
+                    <p>
+                        <input type="submit" id="enviar">
+                         
+                    </p>
+
+
+
+
+                </form>
+
+            </div>
+
+
+        </section>
 
     </main>
-
-
+    
 </body>
 </html>

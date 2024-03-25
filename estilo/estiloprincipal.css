@@ -27,15 +27,19 @@ menu {
 }
 
  menu > ul > li > a {
+    
     background-color: 101010;
     color: #ffe908;
     text-decoration: none;
        
 }
 menu > ul > li {
-   
-    display: inline;
+    border: 1px solid #AD7E17;
+    display: inline-block;
     margin-right: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 150px;
     
 }
 
