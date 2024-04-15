@@ -12,18 +12,19 @@ cor3 - #D69200
 }
 
 header {
-    color:#AD7E17;
+    color :rgb(12, 12, 12);
     background-image: url(../imagens/header/Sem\ título.png);
     width: 100vw;
-    height: 300px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
 
 }
+
 menu { 
 
-    padding-top: 280px;
+    padding-top: 230px;
 }
 
  menu > ul > li > a {
@@ -37,13 +38,11 @@ menu {
 
 
 menu > ul > li {
-    display: ;
-    border: 1px solid #AD7E17;
     display: inline-block;
     margin-right: 20px;
-    width: 150px;
+    width:190px;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     
 }
 
@@ -56,33 +55,70 @@ menu > ul > li > a:hover {
 
 
 
-body{
+header > .container > .item1 > a > img {
+        width: 50px;
+        height:50px;
+        border-radius: 50%;
+        margin-top: 25px;
+        margin-left: 25px;  
+}
 
+header > .container > .item1{
+    text-decoration: none;
+    color: #ffe908;
+       
+}
+
+header > .container > .item2 > a > img {
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 25px;  
+}
+
+header > .container > .item2{
+    text-decoration: none;
+    color: #ffe908;
+}
+
+
+
+body{
+background-color: #0f0f0f;
 }
 
 div#container { 
-    display: flex;
+    padding-top: 20px;
+    background-color:#0f0f0f ;
+    display:flex;
     height: 600px;
-    
+    width: 97vw ;
+   
 }
 
 div#baner1 { 
+    
+    border: 4px solid #AD7E17;
+    margin-left: 20px;
+    margin-right: 15px;
     background-position: center center;
     background-size: cover;  
     background-image: url(../imagens/mostruarios/pexels-andrea-piacquadio-3755706.jpg);
     display: block;
     width: 50%;
     
+    
 }
 
 body > div#container > div#baner1 > a {
-
-    display: block;
+    display: flex;
     margin: auto;
 
 }
 
 div#baner2 { 
+    border: 4px solid #AD7E17;v
     background-position: center center;
     background-size: cover; 
     background-image: url(../imagens/transição/pexels-luca-nardone-3651597.jpg);
@@ -109,4 +145,34 @@ a.link_baner2 {
     padding-left: 20%;
     text-shadow: 2px 2px 1px black;
 }
+
+.artigo > h1 {
+    font-size: 3em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    filter: drop-shadow(8px 7px 8px orange);
+    
+
+}
+
+.artigo > p {
+    margin: 15px;
+    display: inline-block;
+    font-family: sans-serif;
+    line-height: 2;
+    height: 300px;
+    width: 90vw ;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid #AD7E17;
+}
+
+main{ 
+    margin: auto;
+}
+
+
 
