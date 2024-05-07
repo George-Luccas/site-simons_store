@@ -14,7 +14,7 @@ lilas : #5f2c82
 }
 
 body,html {
-    background-image: url(../imagens/pexels-maria-orlova-4947752.jpg);
+    background-image: url(../imagens/fundos/pexels-maria-orlova-4947752.jpg);
     height: 100vh;
     width: 100vw;
     background-position: center center ;
@@ -27,15 +27,18 @@ main {
 }
 
 section#loguin {
+    border: 2px solid white;
     position: absolute;
-    background-color: #ad7d17ce;
+    background-color: rgba(255, 255, 255, 0.262);
     width: 250px;
     height: 500px;
+    padding:6px;
     border-radius: 20px ; 
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
+    
 }
 
 section#loguin > div#imagem { 
@@ -43,7 +46,7 @@ section#loguin > div#imagem {
  height: 200px;
  background-size: cover;
  border-radius: 20px 20px 0px 0px;
- box-shadow: 0px 0px 10px 10px black;
+ 
 }
 
 section#loguin > div#formulario > h1{

@@ -19,18 +19,25 @@ header {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
 
 }
 
 menu { 
+    background-color: #AD7E17;
+    width: 100vw;
 
-    padding-top: 230px;
+    
 }
 
  menu > ul > li > a {
     
     background-color: 101010;
-    color: #ffe908;
+    color: #ffffff;
     text-decoration: none;
        
 }
@@ -39,6 +46,7 @@ menu {
 
 menu > ul > li {
     display: inline-block;
+    margin: auto;
     margin-right: 20px;
     width:190px;
     text-align: center;
@@ -47,60 +55,76 @@ menu > ul > li {
 }
 
 menu > ul > li > a:hover {
-    background-color:rgba(255, 255, 255, 0.445);
-    transition: 1s;
-    border: 1px solid white;
+    background-color:rgb(255, 255, 255);
+    transition: 0.5s;
+    border: 1px solid #AD7E17;
     border-radius: 0.5px;
+    color: #AD7E17;
+    padding: 4px;
 }
 
 
 
-header > .container > .item1 > a > img {
-        width: 50px;
-        height:50px;
+header  > .itemrede1 > a > img {
+        width: 30px;
+        height:30px;
         border-radius: 50%;
         margin-top: 25px;
         margin-left: 25px;  
 }
-
-header > .container > .item1{
+header > .itemrede1 > a {
     text-decoration: none;
     color: #ffe908;
+
+}
+
+header >.itemrede1 {
+    display: flex;
+    justify-content: space-between;
+    
        
 }
 
-header > .container > .item2 > a > img {
-    width: 50px;
-    height:50px;
+header >  .itemrede2 > a > img {
+    width: 30px;
+    height:30px;
     border-radius: 50%;
     margin-top: 25px;
     margin-left: 25px;  
 }
 
-header > .container > .item2{
+header > .itemrede2 > a {
     text-decoration: none;
     color: #ffe908;
+
+}
+
+header > .itemrede2{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 
 
 body{
-background-color: #0f0f0f;
+background-color:rgb(250, 250, 250);
+overflow-x: hidden;
 }
 
 div#container { 
     padding-top: 20px;
-    background-color:#0f0f0f ;
+    background-color:#ffffff ;
     display:flex;
     height: 600px;
-    width: 97vw ;
+    width: 100vw ;
    
 }
 
 div#baner1 { 
     
     border: 4px solid #AD7E17;
-    margin-left: 20px;
+    
     margin-right: 15px;
     background-position: center center;
     background-size: cover;  
@@ -146,28 +170,34 @@ a.link_baner2 {
     text-shadow: 2px 2px 1px black;
 }
 
+.artigo{
+    width: 100vw;
+    
+}
+
 .artigo > h1 {
     font-size: 3em;
     margin-top: 25px;
     margin-bottom: 25px;
-    color: white;
+    color: black;
     text-align: center;
-    filter: drop-shadow(8px 7px 8px orange);
+    filter: drop-shadow(8px 7px 8px rgba(196, 129, 7, 0.722));
     
 
 }
 
 .artigo > p {
-    margin: 15px;
     display: inline-block;
     font-family: sans-serif;
     line-height: 2;
-    height: 300px;
-    width: 90vw ;
+    height: 400px;
+    width: 80vw ;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
     border: 3px solid #AD7E17;
+    columns: 2;
+    margin-left: 10%;
 }
 
 main{ 
