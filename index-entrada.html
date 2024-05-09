@@ -23,18 +23,16 @@
         </menu>
     </div>
    <div id="container">
+    <h2>Os melhores modelos para você ! </h2>
+    <div id="banner-container">
+                <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.32.jpeg" alt="camisa1" class="baner-img" >
+                <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33 (1).jpeg" alt="camisa2" class="baner-img" > 
+                <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33 (2).jpeg" alt="camisa3" class="baner-img" >
+                <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33.jpeg" alt="camisa4" class="baner-img" >
+                <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.13.58 (2).jpeg" alt="camisa5" class="baner-img" >
 
-        <div id="baner1">
-                
-                <a href="#" class="link_baner1">Vista-se com Elegancia</a>
+            </div>
         </div>
-
-        <div id="baner2">
-                
-                <a href="#" class="link_baner2">Encontre seu Estilo</a>
-        </div>
-
-   </div>
     <main>
         
         <article class="artigo">
@@ -50,6 +48,29 @@
 
     </main>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let banners = document.querySelectorAll(".baner-img");
+        let currentBanner = 0;
 
+        function showBanner(index) {
+            banners.forEach(function(banner) {
+                banner.style.opacity = 0;
+            });
+            banners[index].style.opacity = 1;
+        }
+
+        function nextBanner() {
+            currentBanner = (currentBanner + 1) % banners.length;
+            showBanner(currentBanner);
+        }
+
+        // Mostrar o primeiro banner
+        showBanner(currentBanner);
+
+        // Alterar os banners a cada 3 segundos (3000ms)
+        setInterval(nextBanner, 2000);
+    });
+    </script>    
 </body>
 </html>
