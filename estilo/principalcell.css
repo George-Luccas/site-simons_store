@@ -303,8 +303,12 @@ footer {
         align-items: center;
     }
 
+    .h1-baner {
+       display: none;
+    }
+
     #banner-container {
-        margin-top: 50%;
+        margin-bottom: 50%;
         margin-left: 0;
         width: 100%;
         height: auto;
