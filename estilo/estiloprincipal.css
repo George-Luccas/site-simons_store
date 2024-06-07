@@ -13,8 +13,8 @@ cor3 - #D69200
     box-sizing: border-box;
 }
 
-header {
-    color :rgb(12, 12, 12);
+header .shake {
+    color :rgb(0, 0, 0);
     background-image: url(../imagens/header/Sem\ título.png);
     width: 100vw;
     height: 400px;
@@ -27,6 +27,34 @@ header {
     justify-content: space-between;
     
 
+}
+
+header.shake {
+    border: 5px solid; /* Inicializa a borda para aplicar a animação */
+    animation: shake 10.0s infinite, blink-border 0.9s infinite;
+    
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes blink-border {
+    0% { border-color: #5aad17f1; }
+    25% { border-color: #D69200; }
+    50% { border-color: #ebfc03; }
+    75% { border-color: #fc00ef; }
+    100% { border-color: #00b7ff; }
 }
 
 menu { 

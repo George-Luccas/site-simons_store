@@ -185,14 +185,16 @@ footer {
         padding: 10px;
     }
 
-    .container > div {
-        width: 20%;
-    
+    .container > .produto1 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-1.jpeg);
         margin: 10px 
     }
 
     .container > div > h2 {
-        margin: 10px auto;
+        margin-top: 90%;
+        margin-right: 20%;
         width: auto;
     }
 

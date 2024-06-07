@@ -317,8 +317,8 @@ footer {
     .baner-img {
         border: none;
         border-radius: 0;
-        width: 500px;
-        height: 300px;
+        width: 100vw;
+        height: 100vh;
         border: 2px solid black;
         
     }
