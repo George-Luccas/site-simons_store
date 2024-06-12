@@ -197,6 +197,48 @@ footer {
         margin-right: 20%;
         width: auto;
     }
+    .container > .produto2 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-2.jpeg);
+        margin: 10px 
+    }
+    .container > .produto3 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-3.jpeg);
+        margin: 10px 
+    }
+    .container > .produto4 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-4.jpeg);
+        margin: 10px 
+    }
+    .container > .produto5 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-5.jpeg);
+        margin: 10px 
+    }
+    .container > .produto6 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-6.jpeg);
+        margin: 10px 
+    }
+    .container > .produto7 {
+        width: 30%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-6.jpeg);
+        margin: 10px 
+    }
+
+
+
+
+  
+
 
     footer {
         height: auto;

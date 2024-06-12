@@ -89,16 +89,11 @@ body > h1 {
     
     
 }
-.produto1{
-    margin:4px;
-    width: 150px;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.819);
-    border-radius: 30px;
-    background-image: url(/imagens/produtos/fio-duplo/camisa-1.jpeg);
+.container > .produto1 {
+    width: 10%;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: url(../imagens/produtos/fio-duplo/camisa-1.jpeg);
+    margin: 10px 
 }
 
 .produto1 > h2{
@@ -112,17 +107,12 @@ body > h1 {
     color:rgba(0, 0, 0, 0.866)
     
 }
-.produto2{
-    margin:4px;
-    width: 150px;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.819);
-    border-radius: 30px;
-    background-image: url(../imagens/produtos/teste-camisa.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;}
-
+.container > .produto2 {
+    width: 10%;
+    background-size: cover;
+    background-image: url(../imagens/produtos/fio-duplo/camisa-2.jpeg);
+    margin: 10px 
+}
     .produto2 > h2{
     text-align: center;
     border: white solid 1px;
@@ -134,17 +124,12 @@ body > h1 {
     color:rgba(255, 255, 255, 0.866)
     }
 
-.produto3{
-    margin:4px;
-    width: 150px;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.819);
-    border-radius: 30px;
-    background-image: url(../imagens/produtos/teste-camisa.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
+    .container > .produto3 {
+        width: 10%;
+        background-size: cover;
+        background-image: url(../imagens/produtos/fio-duplo/camisa-3.jpeg);
+        margin: 10px 
+    }
 
 .produto3 > h2{
     text-align: center;
@@ -158,16 +143,12 @@ body > h1 {
     
 }
 
-.produto4{margin:4px;
-    width: 150px;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.819);
-    border-radius: 30px;
-    background-image: url(../imagens/produtos/teste-camisa.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;}
-
+.container > .produto4 {
+    width: 10%;
+    background-size: cover;
+    background-image: url(../imagens/produtos/fio-duplo/camisa-4.jpeg);
+    margin: 10px 
+}
     
     .produto4 > h2{
     text-align: center;
@@ -182,18 +163,12 @@ body > h1 {
 }
 
 
-    .produto5{
-    margin:4px;
-    width: 150px;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.819);
-    border-radius: 30px;
-    background-image: url(../imagens/produtos/teste-camisa.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    }
-
+.container > .produto5 {
+    width: 10%;
+    background-size: cover;
+    background-image: url(../imagens/produtos/fio-duplo/camisa-5.jpeg);
+    margin: 10px 
+}
     
     .produto5 > h2{
     text-align: center;
@@ -208,18 +183,12 @@ body > h1 {
 }
 
 
-    .produto6{
-    margin:4px;
-    width: 150px;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.819);
-    border-radius: 30px;
-    background-image: url(../imagens/produtos/teste-camisa.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    }
-
+.container > .produto6 {
+    width: 10%;
+    background-size: cover;
+    background-image: url(../imagens/produtos/fio-duplo/camisa-6.jpeg);
+    margin: 10px 
+}
     
     .produto6 > h2{
     text-align: center;
@@ -231,6 +200,13 @@ body > h1 {
     background-color: rgba(255, 0, 0, 0.336);
     color:rgba(255, 255, 255, 0.866)
     
+}
+
+.container > .produto7 {
+    width: 10%;
+    background-size: cover;
+    background-image: url(../imagens/produtos/fio-duplo/camisa-7.jpeg);
+    margin: 10px 
 }
 footer {
     box-shadow:inset 0px 0px 13px 0px white;
