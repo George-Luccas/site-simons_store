@@ -34,67 +34,34 @@ header {
 
 menu {
     background-color: #AD7E17;
-    width: 100vw;
+    width: 100%;
 }
 
-menu > ul > li > a {
-    background-color: 101010;
-    color: #ffffff;
-    text-decoration: none;
+menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
 }
 
 menu > ul > li {
-    display: inline-block;
     margin: auto;
-    margin-right: 20px;
-    width: 190px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos móveis */
+    width: auto;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 menu > ul > li > a:hover {
     background-color: rgb(255, 255, 255);
     transition: 0.5s;
-    border: 1px solid #AD7E17;
-    border-radius: 0.5px;
     color: #AD7E17;
-    padding: 4px;
-}
-
-header > .itemrede1 > a > img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-header > .itemrede1 > a {
-    text-decoration: none;
-    color: #ffe908;
-}
-
-header > .itemrede1 {
-    display: flex;
-    justify-content: space-between;
-}
-
-header > .itemrede2 > a > img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-header > .itemrede2 > a {
-    text-decoration: none;
-    color: #ffe908;
-}
-
-header > .itemrede2 {
-    display: flex;
-    justify-content: space-between;
 }
 
 body {
@@ -111,8 +78,8 @@ body {
 #banner-container {
     margin-top: 5%;
     margin-left: 5%;
-    width: 40%;
-    height: 400px;
+    width: 45%;
+    height: 15%;
     position: relative;
     object-fit: cover;
 }
@@ -120,7 +87,7 @@ body {
 .titulo-baner > h1 {
     margin-top: 2%;
     font-family: "Lobster", sans-serif;
-    font-weight: 400;
+    font-weight: 400px;
     font-style: normal;
     font-size: 3em;
 }
@@ -128,7 +95,7 @@ body {
 .baner-img {
     border: 5px solid #AD7E17;
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -273,6 +240,27 @@ footer {
     margin-top: 4%;
     animation: rodando 1.5s infinite alternate;
 }
+.swiper-container {
+    width: 100%;
+    height:400px;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+img {
+    max-height: 100%;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+}
+video {
+    max-height: 100%;
+    height: 400px;
+    object-fit: cover;
+}
 
 @keyframes rodando {
     0% {
@@ -293,6 +281,11 @@ footer {
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
     
+    .swiper-container {
+        height: 250px; /* Altura ajustada para telas menores */
+        width: 100%;
+    }
+
    
     header {
         height: 200px;
@@ -311,7 +304,7 @@ footer {
         margin-bottom: 50%;
         margin-left: 0;
         width: 100%;
-        height: auto;
+        height: 300px;
     }
 
     .baner-img {
@@ -324,12 +317,12 @@ footer {
     }
 
     .artigo {
-        margin-top: 200px;
+        margin-top: 20px;
         padding: 0 10px;
     }
 
     .artigo > h1 {
-        margin-top:%;
+        margin-top:10%;
         font-size: 2em;
     }
 
@@ -341,7 +334,10 @@ footer {
     }
 
     menu {
+        margin-top: 50px;
+        display: block;
         width: 100%;
+        height: 30px;
     }
 
     menu > ul > li {
@@ -432,7 +428,8 @@ footer {
         background-color: black;
         margin-top: 100px;
     }
-
+    
+    
    
    
 }

@@ -13,49 +13,10 @@ cor3 - #D69200
     box-sizing: border-box;
 }
 
-header .shake {
-    color :rgb(0, 0, 0);
-    background-image: url(../imagens/header/Sem\ título.png);
-    width: 100vw;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center center;
-    display: flexbox;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
 
-}
 
-header.shake {
-    border: 5px solid; /* Inicializa a borda para aplicar a animação */
-    animation: shake 10.0s infinite, blink-border 0.9s infinite;
-    
-}
 
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 
-@keyframes blink-border {
-    0% { border-color: #5aad17f1; }
-    25% { border-color: #D69200; }
-    50% { border-color: #ebfc03; }
-    75% { border-color: #fc00ef; }
-    100% { border-color: #00b7ff; }
-}
 
 menu { 
     background-color: #AD7E17;
@@ -150,8 +111,7 @@ background-color:rgb(250, 250, 250);
 }
 
 #banner-container {
-    margin-top: 5%;
-    margin-left: 05%;
+    margin-bottom: 0px;
     width: 40%;
     height: 400px;
     position: relative;
@@ -227,6 +187,14 @@ main{
  background-position: center center;
  background-attachment: fixed;
  border-radius: 15px;
+}
+.waths {
+    width: 100%;
+    height:300px;
+    background-image: url(../imagens/transição/contato.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 25px;
 }
 
 .text-prod {
@@ -345,3 +313,37 @@ footer {
     }
 
 
+    .swiper-container {
+        width: 100%;
+        height:400px;
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+    }
+    img {
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+    }
+    video {
+        width: 100vw;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .promo {
+        width: 100%;
+        height: 300px;
+      
+    }
+
+    .divisao2 {
+        background-size: cover;
+        background-image: url(//imagens/transição/contato.png);
+        width: 100%;
+        height: 300px;
+
+    }

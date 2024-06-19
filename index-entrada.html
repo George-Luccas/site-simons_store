@@ -6,36 +6,39 @@
     <title>Simon Store </title>
     <link rel="stylesheet" href="estilo/estiloprincipal.css">
     <link rel="stylesheet" href="estilo/principalcell.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="shake">
-        
-            <div class="itemrede1"><a href="https://www.instagram.com/simon_storeofficial/" target="_blank"><img src="imagens/redes-sociais/instagram.webp" alt="instagram"> Instagram</a></div>
-
-            <div class="itemrede2"> <a href=" https://w.app/OCkq4l"><img src="imagens/redes-sociais/whatsapp.webp" alt="whatsapp"> Peça agora!</a></div>
-       
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imagens/header/WhatsApp Image 2024-05-09 at 11.13.57.jpeg" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay muted loop>
+                        <source src="imagens/header/logo animada.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagens/header/WhatsApp Image 2024-05-23 at 10.00.26 (6).jpeg" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <video autoplay muted loop>
+                        <source src="imagens/header/Entre em contato agora medmo e ganh.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div> 
     </header>
-    <div id="container_menu">
         <menu>
             <ul>
                 <li><a href="index-peruana.html" >Malha Peruana</a></li>
                 <li><a href="index-fio-duplo.html">Malha de fio Duplo</a></li>
             </ul>
         </menu>
-    </div>
-   <div id="container">
-    <div class="titulo-baner">
-      
-        <div id="banner-container">
-                    <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.32.jpeg" alt="camisa1" class="baner-img" >
-                    <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33 (1).jpeg" alt="camisa2" class="baner-img" >
-                    <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33 (2).jpeg" alt="camisa3" class="baner-img" >
-                    <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33.jpeg" alt="camisa4" class="baner-img" >
-                    <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.13.58 (2).jpeg" alt="camisa5" class="baner-img" >
-                </div>
-                <h1 class="h1-baner">Os melhores modelos para você ! </h1>
-    </div>
-        </div>
+  
     <main>
         
         <article class="artigo">
@@ -48,6 +51,26 @@
                 Em resumo, vestir-se bem é uma maneira de mostrar confiança, respeito próprio e estilo pessoal. Então, da próxima vez que escolher suas roupas, lembre-se do impacto que elas têm não apenas na sua aparência, mas também na forma como você é percebido pelos outros. </p>
 
         </article>
+
+        <div class="promo"><video src="imagens/transição/INSTA.mp4" autoplay loop muted></video></div>
+       
+        <div id="container">
+            <div class="titulo-baner">
+              
+                <div id="banner-container">
+                            <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.32.jpeg" alt="camisa1" class="baner-img" >
+                            <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33 (1).jpeg" alt="camisa2" class="baner-img" >
+                            <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33 (2).jpeg" alt="camisa3" class="baner-img" >
+                            <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.07.33.jpeg" alt="camisa4" class="baner-img" >
+                            <img src="imagens/baner-rota/Peruana/WhatsApp Image 2024-05-09 at 11.13.58 (2).jpeg" alt="camisa5" class="baner-img" >
+                </div>
+                        <h1 class="h1-baner">Os melhores modelos para você ! </h1>
+            </div>
+        </div>
+
+        <div class="waths">
+
+        </div>
 
         <div class="divisao"> 
 
@@ -109,5 +132,19 @@
         setInterval(nextBanner, 2000);
     });
     </script>    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
