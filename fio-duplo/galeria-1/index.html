@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image-slider" id="imageSlider">
+        <img src="imagens/camisa-1.jpeg" alt="Imagem 1" class="active">
+        <img src="imagens/camisa-2.jpeg" alt="Imagem 2">
+        <img src="imagens/camisa-5.jpeg" alt="Imagem 3">
+        <img src="imagens/camisa-6.jpeg" alt="Imagem 4">
+        <button class="prev" id="prevBtn">&#10094;</button>
+        <button class="next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('imageSlider');
+    const images = slider.getElementsByTagName('img');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (index + images.length) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => {
+        showImage(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        showImage(currentIndex + 1);
+    });
+});
+
+    </script>
+</body>
+</html>

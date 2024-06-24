@@ -114,6 +114,10 @@ body > h1 {
     background-repeat: no-repeat;
 }
 
+.produto-front > h2 {
+    margin-top: 15%;
+}
+
 .produto-back {
     background-color: rgba(255, 0, 0, 0.979);
     color: rgba(0, 0, 0, 0.866);
@@ -122,6 +126,10 @@ body > h1 {
     align-items: center;
     justify-content: center;
     background-position: ce;
+}
+.produto-back > p > a { 
+    text-decoration: none;
+    color: aqua;
 }
 
 footer {
@@ -161,15 +169,75 @@ footer {
 .produto:nth-child(1) .produto-front {
     background-image: url(../imagens/produtos/fio-duplo/camisa-1.jpeg);
     color: #fff;
+    h2{text-shadow:rgb(0, 255, 221) 3px 0px 20px;}
 }
 .produto:nth-child(1) .produto-back  {
     background-image: url(../imagens/produtos/fio-duplo/camisa-1.jpeg);
     color: #fff;
-    
+    background-size: cover;
+   
 }
+/*----------------------------separação---------------------------------------*/
+/*----------------------------separação---------------------------------------*/
 .produto:nth-child(2) .produto-front {
     background-image: url(../imagens/produtos/fio-duplo/camisa-2.jpeg);
+    h2{text-shadow:rgb(0, 255, 221) 3px 0px 20px;}
+    color: white;
 }
 .produto:nth-child(2) .produto-back  {
-    background-image: url(../imagens/produtos/fio-duplo/camisa-1.jpeg);
+    background-image: url(../imagens/produtos/fio-duplo/camisa-2.jpeg);
+    background-size: cover;
+    color: #fff;
+    
 }
+/*----------------------------separação---------------------------------------*/
+/*----------------------------separação---------------------------------------*/
+.produto:nth-child(3) .produto-back  {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-3.jpeg);
+    background-size: cover;
+    color: #fff;
+    
+}
+.produto:nth-child(3) .produto-front {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-3.jpeg);
+    color: #fff;
+    h2{text-shadow:rgb(0, 255, 221) 3px 0px 20px;}
+}
+/*----------------------------separação---------------------------------------*/
+/*----------------------------separação---------------------------------------*/
+.produto:nth-child(4) .produto-back  {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-4.jpeg);
+    background-size: cover;
+    color: #fff;
+}
+.produto:nth-child(4) .produto-front {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-4.jpeg);
+    color: #fff;
+    h2{text-shadow:rgb(0, 255, 221) 3px 0px 20px;}
+}
+/*----------------------------separação---------------------------------------*/
+/*----------------------------separação---------------------------------------*/
+.produto:nth-child(5) .produto-back  {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-5.jpeg);
+    background-size: cover;
+    color: #fff;
+}
+.produto:nth-child(5) .produto-front {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-5.jpeg);
+    color: #fff;
+    h2{text-shadow:rgb(0, 255, 221) 3px 0px 20px;}
+}
+/*----------------------------separação---------------------------------------*/
+/*----------------------------separação---------------------------------------*/
+.produto:nth-child(6) .produto-back  {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-6.jpeg);
+    background-size: cover;
+    color: #fff;
+}
+.produto:nth-child(6) .produto-front {
+    background-image: url(../imagens/produtos/fio-duplo/camisa-6.jpeg);
+    color: #fff;
+    h2{text-shadow:rgb(0, 255, 221) 3px 0px 20px;}
+}
+/*----------------------------separação---------------------------------------*/
+/*----------------------------separação---------------------------------------*/
