@@ -22,8 +22,8 @@
 
                 <div class="swiper-slide">
                     <video autoplay muted loop>
-                        <source src="imagens/header/logo animada.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
+                        <source src="imagens/header/logo animada.mp4" type="video/mp4" alt="video-logo">
+                        <p>Seu navegador não é compativel com o video</p>
                     </video>
                 </div>
 
@@ -33,8 +33,8 @@
 
                 <div class="swiper-slide">
                     <video autoplay muted loop>
-                        <source src="imagens/header/Entre em contato agora medmo e ganh.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
+                        <source src="imagens/header/contato.mp4" type="video/mp4" alt="video-promo">
+                        <p>Seu navegador não é compativel com o video</p>
                     </video>
                 </div>
 
@@ -53,7 +53,9 @@
     <main>
         
         <article class="artigo">
+
             <h1>Porque se vestir bem ?</h1>
+
             <p>
                 Vestir-se bem é mais do que apenas colocar roupas bonitas. É sobre sentir-se confiante e transmitir uma imagem positiva aos outros. Quando escolhemos roupas que nos deixam confortáveis e seguros, isso reflete em nossa postura e atitude, mostrando que cuidamos de nossa aparência.
                 
@@ -63,8 +65,14 @@
 
         </article>
 
-        <div class="promo"><video src="imagens/transição/INSTA.mp4" autoplay loop muted></video></div>
-       
+        <div class="promo">
+            
+        <video src="imagens/transição/INSTA.mp4" autoplay loop muted><p>Seu navegador não é compativel com o video</p></video>
+        
+        </div>
+        
+        </main> 
+
        
         <div class="waths">
             <div class="clickwaths"><a href="#">Fale Agora</a></div>
@@ -73,8 +81,12 @@
         <div class="divisao"> 
 
         </div>
-           <h1 class="text-prod"> Nossos Produtos</h1>
+        
+           
+
         <div id="Qualidade">
+
+            <h1 class="text-prod"> Nossos Produtos</h1>
 
             <h2>Malha Peruana</h2>
 
@@ -92,7 +104,7 @@
                 <div class="mostruario2"></div>
             </div>
 
-            </div>
+            
         </div>
 
     </main>
@@ -106,30 +118,7 @@
     </div>
    
 </footer>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let banners = document.querySelectorAll(".baner-img");
-        let currentBanner = 0;
-
-        function showBanner(index) {
-            banners.forEach(function(banner) {
-                banner.style.opacity = 0;
-            });
-            banners[index].style.opacity = 1;
-        }
-
-        function nextBanner() {
-            currentBanner = (currentBanner + 1) % banners.length;
-            showBanner(currentBanner);
-        }
-
-        // Mostrar o primeiro banner
-        showBanner(currentBanner);
-
-        // Alterar os banners a cada 3 segundos (3000ms)
-        setInterval(nextBanner, 2000);
-    });
-    </script>    
+       
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
