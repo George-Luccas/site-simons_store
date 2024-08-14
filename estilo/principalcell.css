@@ -29,6 +29,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    max-width: 668px;
 }
 
 nav.menu {
